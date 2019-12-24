@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import logo from '../img/logo.svg'
+import { Link } from 'gatsby';
 
 const TitleContainer = styled.div`
   max-width: 620px;
@@ -32,8 +33,10 @@ const Navbar = class extends React.Component {
     return (
     <nav>
       <TitleContainer>
-        <Logo src={logo} alt='Rainbow Crow' title='Rainbow Crow'></Logo>
-        <Title>Rainbow Crows</Title>
+        <Link to="/">
+          <Logo src={logo} alt='Rainbow Crow' title='Rainbow Crow'></Logo>
+          <Title>Rainbow Crows</Title>
+        </Link>
       </TitleContainer>
     </nav>
     )
